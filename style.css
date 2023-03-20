@@ -1,0 +1,117 @@
+/* Navbar responsive section */
+
+.navbar{
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+   font-weight: 600;
+}
+.navbar a:hover{
+    background-color: gray;
+}
+/* Navbar responsive section */
+
+/* card Responsive section */
+.card-group{
+    padding: 50px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 80px;
+    grid-column-gap: 80px;
+
+}
+.card-img{
+    width: 100%;
+}
+.card{
+    justify-content: space-around;
+   width: 300px;
+   height: 100%;
+   border: 1px solid black;
+   border-radius: 5px;
+   transition: 1s;
+}
+.card:hover{
+    transform: translateY(-8px);
+}
+.card-text{
+    padding: 15px;
+}
+.card-text h1{
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+.card-text p{
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+/* card Responsive section */
+
+/*-------------------------------
+-------- Media section ----------
+---------------------------------*/
+
+
+@media screen and (max-width:600px) {
+
+/* media Navbar responsive section */
+    .navbar{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .navbar a{
+        background-color: blueviolet;
+        margin: 10px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+/* media Navbar responsive section */
+}
+
+/* media card Responsive section */
+@media screen and (max-width:992px){
+   
+    .card-group{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 8%;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .card-group{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 18%;
+    }
+    
+}
+/* media card Responsive section */
+
+/* footer section */
+.footer-div{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+.footer-div a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+
+}
+.footer-div h3{
+    color: white;
+}
